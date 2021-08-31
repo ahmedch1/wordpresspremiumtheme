@@ -1,7 +1,11 @@
 <?php get_header(); ?>
-<?php if (have_posts()) { ?>
-    <?php while (have_posts()) { ?>
-        <?php the_post(); ?>
+<pre>
+<?php var_dump($wp_query); ?>
+</pre>
+<?php if ($wp_query->have_posts()) { ?>
+
+    <?php while ($wp_query->have_posts()) { ?>
+        <?php $wp_query->the_post(); ?>
         <h2>
             <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
                 <?php the_title() ?>
