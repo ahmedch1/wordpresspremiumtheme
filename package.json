@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Course Link\r https://www.udemy.com/course/the-complete-guide-to-building-premium-wordpress-themes",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "gulp",
     "build": "gulp build --prod"
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/ahmedch1/wordpresspremiumtheme#readme",
   "devDependencies": {
+    "babel-loader": "^8.2.2",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "del": "^6.0.0",
@@ -27,7 +29,9 @@
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "sass": "^1.39.0",
+    "webpack-stream": "^7.0.0",
     "yargs": "^17.1.1"
   }
 }
