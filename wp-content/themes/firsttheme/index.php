@@ -2,11 +2,7 @@
 <?php if ($wp_query->have_posts()) { ?>
     <?php while ($wp_query->have_posts()) { ?>
         <?php $wp_query->the_post(); ?>
-        <h2>
-            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-                <?php the_title() ?>
-            </a>
-        </h2>
+
         <div>
             <?php firsttheme_post_meta(); ?>
         </div>
@@ -26,7 +22,7 @@ $city = 'london';
 echo esc_html__('Your city is ', 'firsttheme') . $city;
 
 printf(
-        /* translators: %s is the city name */
+/* translators: %s is the city name */
     esc_html('Your city is %s', 'firsttheme'),
     $city
 )
