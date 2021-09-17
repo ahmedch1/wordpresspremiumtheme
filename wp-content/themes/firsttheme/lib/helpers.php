@@ -1,5 +1,5 @@
 <?php
-function firsttheme_post_meta()
+function _themename_post_meta()
 {
     printf(esc_html('Posted on %s', '_themename'),
         '<a href="' . esc_url(get_permalink()) . '<time datetime="' . esc_attr(get_the_date('c')) .

@@ -12,8 +12,9 @@ import named from 'vinyl-named';
 import browserSync from 'browser-sync';
 import zip from 'gulp-zip'
 import replace from 'gulp-replace';
-import info from './package.json'
-
+import info from './package.json';
+import replace from 'gulp-replace';
+import info from './package.json';
 
 
 const server = browserSync().create();
@@ -119,7 +120,7 @@ export const scripts = () => {
 }
 export const compress = () => {
     return gulp.src(paths.package.src)
-        .pipe(replace('_themename', info.name))
+        .pipe(replace('_themename',info.name))
         .pipe(zip(`${info.name}.zip`))
         .pipe(gulp.dest(paths.package.dest));
 }
