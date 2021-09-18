@@ -13,8 +13,6 @@ import browserSync from 'browser-sync';
 import zip from 'gulp-zip'
 import replace from 'gulp-replace';
 import info from './package.json';
-import replace from 'gulp-replace';
-import info from './package.json';
 
 
 const server = browserSync().create();
