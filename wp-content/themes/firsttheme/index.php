@@ -12,11 +12,11 @@
         <?php _themename_readmore_link(); ?>
     <?php } ?>
     <?php the_posts_pagination(); ?>
-    <?php do_action('_themename_after_pagination')?>
+    <?php do_action('_themename_after_pagination') ?>
 
 <?php } else {
     ?>
-    <p><?php echo apply_filters('_themename_no_posts_test',esc_html__('Sorry,no posts matched your criteria',
+    <p><?php echo apply_filters('_themename_no_posts_test', esc_html__('Sorry,no posts matched your criteria',
             '_themename')); ?></p>
 <?php } ?>
 
