@@ -16,7 +16,8 @@
 
 <?php } else {
     ?>
-    <p><?php echo esc_html_e('Sorry,no posts matched your criteria', '_themename'); ?></p>
+    <p><?php echo apply_filters('_themename_no_posts_test',esc_html__('Sorry,no posts matched your criteria',
+            '_themename')); ?></p>
 <?php } ?>
 
 

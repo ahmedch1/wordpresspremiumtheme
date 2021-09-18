@@ -23,6 +23,15 @@ function function_to_add($query)
     }
 
 }
+function no_posts_text($text)
+{
+    return esc_html__('No Posts','rgfergergr');
+}
+add_filter('_themename_no_posts_text','no_posts_text');
 
+function filter_title($title){
+    return 'Filtered'. $title;
 
+}
+add_filter('the_title','filter_title');
 ?>
